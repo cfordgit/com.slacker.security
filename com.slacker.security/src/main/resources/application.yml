@@ -1,0 +1,20 @@
+logging.level.org.springframework: INFO
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            provider: google
+            client-id: 24283368698-g6r83bdaibr1nrfq0iqmeq801tm75smq.apps.googleusercontent.com
+            client-secret: J6z1lgN-LBqjDlh-2QrzEFtB 
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+              - email
+              - profile
+              # - https://www.googleapis.com/auth/tasks.readonly
+        provider:
+          google:
+            issuer-uri: https://accounts.google.com
